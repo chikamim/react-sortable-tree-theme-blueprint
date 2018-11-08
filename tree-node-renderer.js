@@ -1,6 +1,6 @@
-import React, { Component, Children, cloneElement } from 'react';
-import PropTypes from 'prop-types';
-import styles from './tree-node-renderer.scss';
+import React, { Component, Children, cloneElement } from "react";
+import PropTypes from "prop-types";
+import styles from "./tree-node-renderer.scss";
 
 class FileThemeTreeNodeRenderer extends Component {
   render() {
@@ -36,7 +36,7 @@ class FileThemeTreeNodeRenderer extends Component {
             listIndex,
             swapFrom,
             swapLength,
-            swapDepth,
+            swapDepth
           })
         )}
       </div>
@@ -49,7 +49,7 @@ FileThemeTreeNodeRenderer.defaultProps = {
   swapDepth: null,
   swapLength: null,
   canDrop: false,
-  draggedNode: null,
+  draggedNode: null
 };
 
 FileThemeTreeNodeRenderer.propTypes = {
@@ -76,7 +76,7 @@ FileThemeTreeNodeRenderer.propTypes = {
   path: PropTypes.arrayOf(
     PropTypes.oneOfType([PropTypes.string, PropTypes.number])
   ).isRequired,
-  rowDirection: PropTypes.string.isRequired,
+  rowDirection: PropTypes.string.isRequired
 };
 
 export default FileThemeTreeNodeRenderer;
